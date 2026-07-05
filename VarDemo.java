@@ -45,3 +45,34 @@ class Student {
         System.out.println("Student Method");
     }
 }
+
+
+// The main reason var is not a keyword is backward compatibility.
+
+// Before Java 10, programmers could legally write code like:
+
+// class var {
+// }
+
+// int var = 10;
+
+// void var() {
+// }
+
+// If Java had made var a keyword, all this existing code would stop compiling.
+
+// To avoid breaking older programs, Java introduced var as a reserved type name, not as a keyword.
+
+
+
+// Why only local variables?
+
+// For local variables, the compiler can immediately infer the type from the initializer.
+
+// var name = "Abhijit";
+
+// ↓
+
+// String name = "Abhijit";
+
+// For fields, method parameters, return types, and class declarations, Java requires the type to be written explicitly to keep APIs clear and readable.
