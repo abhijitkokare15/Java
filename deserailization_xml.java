@@ -9,7 +9,7 @@ import java.io.InputStream;
 // Calls the no-argument constructor.
 // Returns the reference to XMLDecoder.
 
-So even though you never write new Student(), XMLDecoder internally requests the JVM to create a new Student object using reflection. That's how the object gets created and memory is allocated.
+//So even though you never write new Student(), XMLDecoder internally requests the JVM to create a new Student object using reflection. That's how the object gets created and memory is allocated.
 public class deserailization_xml {
     public static void main() throws Exception 
     {
